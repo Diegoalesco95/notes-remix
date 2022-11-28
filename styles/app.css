@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+
+.layout {
+  @apply mt-4 flex flex-col items-center gap-4
+}
+
+.button-primary {
+  @apply py-2 px-8 bg-violet-500 rounded-md text-white hover:cursor-pointer hover:shadow-md
+}
+
+.title {
+  @apply text-2xl font-bold
+}
+
+@tailwind utilities;
