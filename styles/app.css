@@ -2,15 +2,39 @@
 @tailwind components;
 
 .layout {
-  @apply mt-4 flex flex-col items-center gap-4
+  @apply mt-4 flex flex-col items-center gap-4;
 }
 
 .button-primary {
-  @apply py-2 px-8 bg-violet-500 rounded-md text-white hover:cursor-pointer hover:shadow-md
+  @apply py-2 px-8 bg-violet-500 rounded-md text-white hover:cursor-pointer hover:shadow-md mx-auto;
+}
+
+.nav-item {
+  @apply font-semibold hover:text-violet-300;
+}
+
+.note {
+  @apply bg-violet-700 px-4 py-2 text-white rounded-md shadow-lg w-48;
+}
+
+.note-content {
+  @apply text-base;
+}
+
+.note-meta {
+  @apply flex justify-between text-xs font-light border-b pb-1;
+}
+
+.note-title {
+  @apply text-lg font-semibold;
 }
 
 .title {
-  @apply text-2xl font-bold
+  @apply text-2xl font-bold;
 }
 
 @tailwind utilities;
+
+.active {
+  @apply text-violet-500;
+}
