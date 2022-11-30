@@ -1,12 +1,16 @@
 @tailwind base;
 @tailwind components;
 
+.error {
+  @apply bg-violet-500 flex gap-2 mx-auto flex-col w-72 py-8 px-4 rounded-md mt-4 justify-center items-center text-white;
+}
+
 .layout {
   @apply mt-4 flex flex-col items-center gap-4;
 }
 
 .button-primary {
-  @apply py-2 px-8 bg-violet-500 rounded-md text-white hover:cursor-pointer hover:shadow-md mx-auto;
+  @apply py-2 px-8 bg-violet-500 rounded-md text-white hover:cursor-pointer hover:shadow-md mx-auto disabled:cursor-default disabled:opacity-50 disabled:shadow-none;
 }
 
 .nav-item {
@@ -14,11 +18,11 @@
 }
 
 .note {
-  @apply bg-violet-700 px-4 py-2 text-white rounded-md shadow-lg w-48;
+  @apply bg-violet-700 px-4 py-2 text-white rounded-sm shadow-lg w-48;
 }
 
 .note-content {
-  @apply text-base;
+  @apply text-base break-words;
 }
 
 .note-meta {
@@ -34,6 +38,10 @@
 }
 
 @tailwind utilities;
+
+.text-error {
+  @apply text-red-500 text-sm text-center;
+}
 
 .active {
   @apply text-violet-500;

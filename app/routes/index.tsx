@@ -9,9 +9,9 @@ export default function Index() {
 			<p className='text-base'>
 				Try our eary beta and never loose track of your notes again!
 			</p>
-			<p id='cta' className='button-primary'>
-				<Link to='/notes'>Try Now!</Link>
-			</p>
+			<Link id='cta' className='button-primary' to='/notes'>
+				Try Now!
+			</Link>
 		</main>
 	);
 }

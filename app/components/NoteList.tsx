@@ -2,7 +2,7 @@ import type { Notes } from '~/types/notes.type';
 
 function NoteList({ notes }: Notes) {
 	return (
-		<ul className='flex gap-8' id='note-list'>
+		<ul className='flex justify-center gap-4 flex-wrap px-4' id='note-list'>
 			{notes.map((note, index) => (
 				<li key={note.id} className='note'>
 					<article>
