@@ -53,6 +53,13 @@ export const loader: LoaderFunction = async () => {
 	return notes;
 };
 
+export function meta() {
+	return {
+		title: 'All Notes',
+		description: 'Manage your notes easy'
+	};
+}
+
 export function CatchBoundary() {
 	const caughtResponse = useCatch();
 
